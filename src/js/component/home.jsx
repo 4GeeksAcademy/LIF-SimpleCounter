@@ -4,10 +4,18 @@ import React from "react";
 import Counter from "./Counter";
 
 //create your first component
-const Home = () => {
+const Home = (props) => {
 	return (
 		<>
-		<Counter/>
+		<Counter
+		digitOne={props.digitOne}
+		digitTwo={props.digitTwo}
+		digitThree={props.digitThree}
+		digitFour={props.digitFour}
+		digitFive={props.digitFive}
+		digitSix={props.digitSix}
+	
+		/>
 		</>
 	);
 };
